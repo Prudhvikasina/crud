@@ -1,0 +1,189 @@
+{
+  "employee": [
+    {
+      "ename": "prudhvi",
+      "edept": "frontend",
+      "mobile": 9888767656,
+      "mail": "sri@gmail.com",
+      "id": 2
+    },
+    {
+      "ename": "charan",
+      "edept": "data science",
+      "mobile": 7095885070,
+      "mail": "yash@gmail.com",
+      "id": 4
+    },
+    {
+      "ename": "Hari",
+      "edept": "React Developer",
+      "mobile": 9888787898,
+      "mail": "Hari@gmail.com",
+      "id": 7
+    },
+    {
+      "ename": "naidu",
+      "edept": "Data seience",
+      "mobile": 9888765565,
+      "mail": "sam@gmail.com",
+      "id": 8
+    },
+    {
+      "ename": "sairam",
+      "edept": "IT",
+      "mobile": 9888767898,
+      "mail": "msndxj@gmail.com",
+      "id": 11
+    },
+    {
+      "ename": "dhanujai",
+      "edept": "react",
+      "mobile": 9888787656,
+      "mail": "ramya@gmail.com",
+      "id": 12
+    },
+    {
+      "ename": "vishnu",
+      "edept": "gis",
+      "mobile": 9888765432,
+      "mail": "bhavya@gmail.com",
+      "id": 13
+    },
+    {
+      "ename": "sandeep",
+      "edept": "IT",
+      "mobile": 9666813808,
+      "mail": "Amruth@gmail.com",
+      "id": 14
+    },
+    {
+      "ename": "ajay",
+      "edept": "Data Sceince",
+      "mobile": 7095888507,
+      "mail": "yash@gmail.com",
+      "id": 15
+    },
+    {
+      "ename": "sam",
+      "edept": "ui",
+      "mobile": 9666823807,
+      "mail": "sam@gmail.com",
+      "id": 16
+    },
+    {
+      "ename": "nmb",
+      "edept": "nbb",
+      "mobile": 9888787676,
+      "mail": "d@gmail.com",
+      "id": 17
+    },
+    {
+      "ename": "ramrao",
+      "edept": "it",
+      "mobile": 9888878898,
+      "mail": "asd@gmail.com",
+      "id": 18
+    },
+    {
+      "ename": "yash",
+      "edept": "datasceince",
+      "mobile": 9888787898,
+      "mail": "yash@gmail.com",
+      "id": 19
+    },
+    {
+      "ename": "Ash",
+      "edept": "IT",
+      "mobile": 9888787676,
+      "mail": "asha@gmail.com",
+      "id": 20
+    },
+    {
+      "ename": "sairam",
+      "edept": "IT",
+      "mobile": 9888787676,
+      "mail": "SAIRAM@GMAIL.COM",
+      "id": 21
+    },
+    {
+      "ename": "ASHWITHA",
+      "edept": "UI",
+      "mobile": 9888787787,
+      "mail": "FGFG@GMAIL.COM",
+      "id": 22
+    },
+    {
+      "ename": "SA",
+      "edept": "SSDS",
+      "mobile": 9888765565,
+      "mail": "SSD@GMAIL.COM",
+      "id": 23
+    },
+    {
+      "ename": "QASHA",
+      "edept": "IT",
+      "mobile": 9888789887,
+      "mail": "ASH@GMAIL.COM",
+      "id": 24
+    },
+    {
+      "ename": "demo",
+      "edept": "iy",
+      "mobile": 9888767898,
+      "mail": "femo@gmail.com",
+      "id": 25
+    },
+    {
+      "ename": "ram",
+      "edept": "iy",
+      "mobile": 9888767898,
+      "mail": "ytgay@gmail.com",
+      "id": 26
+    },
+    {
+      "ename": "xzczx",
+      "edept": "zxczx",
+      "mobile": 6422423535,
+      "mail": "d@g.c",
+      "id": 27
+    },
+    {
+      "ename": "asdas",
+      "edept": "asdsa",
+      "mobile": 6543212345,
+      "mail": "d@g.co",
+      "id": 28
+    },
+    {
+      "ename": "asd",
+      "edept": "asd",
+      "mobile": 7658658678,
+      "mail": "g@g.c",
+      "id": 29
+    },
+    {
+      "ename": "hari",
+      "edept": "IT",
+      "mobile": 9848507255,
+      "mail": "hari@gmail.com",
+      "id": 30
+    },
+    {
+      "ename": "sab",
+      "edept": "df",
+      "mobile": 9888776767,
+      "mail": "g@g.com",
+      "id": 31
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

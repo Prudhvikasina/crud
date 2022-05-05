@@ -1,0 +1,113 @@
+
+<div class="container">
+    <div class="col md-6">
+        <div class="row box shadow">
+    <form [formGroup]="userValue" autocomplete="off">
+        <div class="mb-1">
+            <label for="ename" class="form-label">Employee Name</label>
+            <div class="input-group has-validation">
+                <input type="text" #name [ngClass]="{'form-control': true, 
+                'is-invalid': userValue.get('ename')?.invalid &&
+                (userValue.get('ename')?.dirty || userValue.get('ename')?.touched)}" 
+                id="ename" name="ename"
+                    formControlName="ename" placeholder="Name">
+                <div class="invalid-feedback">
+                    This field is required.
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-1">
+            <label for="edept" class="form-label">Employee Dept</label>
+            <div class="input-group has-validation">
+                <input type="text" #name [ngClass]="{'form-control': true, 
+                'is-invalid': userValue.get('edept')?.invalid &&
+                (userValue.get('edept')?.dirty || userValue.get('edept')?.touched)}" 
+                id="edept" name="edept"
+                    formControlName="edept" placeholder="Dept">
+                <div class="invalid-feedback">
+                    This field is required.
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-1">
+            <label for="mobile" class="form-label">Mobile</label>
+            <div class="input-group has-validation">
+                <input type="number" maxlength="10" [ngClass]="{'form-control': true, 'is-invalid': userValue.get('mobile')?.invalid &&
+                (userValue.get('mobile')?.dirty || userValue.get('mobile')?.touched)}" id="mobile" name="mobile"
+                    formControlName="mobile" placeholder="Mobile">
+                <div class="invalid-feedback">
+                    This field is required.
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-1">
+            <label for="mail" class="form-label">Email</label>
+            <div class="input-group has-validation">
+                <input type="mail" 
+                [ngClass]="{'form-control': true, 
+                'is-invalid': userValue.get('mail')?.invalid &&
+                    (userValue.get('mail')?.dirty || 
+                    userValue.get('mail')?.touched)}" id="mail" name="mail"
+                    formControlName="mail" placeholder="xyz@gmail.com">
+                <div class="invalid-feedback">
+                    {{userValue.get('mail')?.hasError('required') ? 'This field is required.':'Invalid Email'}}
+                </div>
+            </div>
+        </div>
+        <div class="mb-1">
+            <label for="DOB" class="form-label">DOB</label>
+            <p-calendar [showIcon]="true" inputId="icon" formControlName="dob" [ngClass]="{'form-control': true, 'is-invalid': userValue.get('dob')?.invalid &&
+            (userValue.get('dob')?.dirty || userValue.get('dob')?.touched)}"></p-calendar>
+        </div>
+        <div class="mb-1">
+            <label for="gender" class="form-label">Gender {{userValue.get('gender')?.value}} </label>
+            <div class="input-group has-validation">
+                <select [ngClass]="{'form-select': true, 'is-invalid': userValue.get('gender')?.invalid &&
+                    (userValue.get('gender')?.dirty || userValue.get('gender')?.touched)}"
+                    aria-label="Default select example" formControlName="gender">
+                    <option value=""> --Select--</option>
+                    <option value="Male" selected="userValue.get('gender')?.value=='Male'">Male</option>
+                    <option value="Female" selected="userValue.get('gender')?.value=='Female'">Female</option>
+                </select>
+                <div class="invalid-feedback">
+                    This field is required.
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <form action="/action_page.php">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                <label class="form-check-label" for="check1">Yes</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                <label class="form-check-label" for="check2">No</label>
+              </div>
+            </form>
+          </div>
+          <div class="container mt-3">
+            <form action="/action_page.php">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                <label class="form-check-label" for="mySwitch">Active</label>
+              </div>
+            </form>
+          </div>
+        <div class="mb-1 p-4">
+            <div class="btn-group" role="group" aria-label="Button">
+                <button (click)="save()" [disabled]="userValue.invalid" class="btn btn-primary" type="button">
+                    {{id==0 || id==null ?'Save':'Update'}}</button>
+                <button class="btn btn-secondary" type="button">Reset </button>
+            </div>
+        </div>
+        <div class="mb-1">
+            {{userValue.value |json}}
+        </div>
+    </form>
+    </div>
+    </div>
+</div>
