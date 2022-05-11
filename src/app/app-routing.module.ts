@@ -1,14 +1,32 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutusComponent } from './aboutus/aboutus.component';
+
+// import { AuthGuard } from './auth.guard';
+
+import { ContactusComponent } from './contactus/contactus.component';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
-// import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
+
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { UserComponent } from './user/user.component';
+import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
   { path: 'all', component: EmployeeListComponent },
   { path: 'create', component: CreateEmployeeComponent },
   { path: 'update-employee/:id', component: CreateEmployeeComponent },
-  // { path: 'edit/:id', component:EditEmployeeComponent},
+  {path:'',component:HomeComponent},
+  {path:'contactus',component:ContactusComponent},
+  {path:'aboutus',component:AboutusComponent},
+  {path:'login' ,component:LoginComponent},
+  // {path:'special', component:SpecialEventsComponent,canActivate:[AuthGuard]},
+  {path: 'register', component:RegisterComponent},
+  {path: 'user' , component:UserComponent},
+  {path: 'users' , component:UsersComponent},
+
 ];
 
 @NgModule({

@@ -18,6 +18,16 @@ import { SliderModule } from 'primeng/slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { EmployeeService } from './employee.service';
+import { HomeComponent } from './home/home.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component';
+import { UsersComponent } from './users/users.component';
+
+// import { AuthService } from './auth.service';
+// import { AuthGuard } from './auth.guard';
+
 
 
 @NgModule({
@@ -25,6 +35,14 @@ import { EmployeeService } from './employee.service';
     AppComponent,
     EmployeeListComponent,
     CreateEmployeeComponent,
+    HomeComponent,
+    ContactusComponent,
+    AboutusComponent,
+    LoginComponent,
+    UserComponent,
+    UsersComponent,
+
+  
     // EditEmployeeComponent
   ],
   imports: [

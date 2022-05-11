@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-employee-list',
   templateUrl: './employee-list.component.html',
-  styleUrls: ['./employee-list.component.css']
+  styleUrls: ['./employee-list.component.sass']
 })
 
 
@@ -46,43 +46,4 @@ export class EmployeeListComponent implements OnInit {
   }
 }
 
-// export class EmployeeListComponent implements OnInit {
-//   employees = new Array<Employee>();
 
-//   constructor(private empservice: EmployeeService, private formBuilder: FormBuilder, private router: Router) {
-//     empservice.getAllEmployes().subscribe((response: Employee[]) => {
-//       this.employees = response.map(item => {
-//         return new Employee(
-//           item.id,
-//           item.ename,
-//           item.edept,
-//           item.mobile,
-//           item.mail
-//         );
-//       });
-//     });
-//   }
-
-//   ngOnInit(): void {
-//     this.getAllEmployes;
-//   }
-//   getAllEmployes(): void {
-//     this.empservice.getAllEmployes().subscribe(data => {
-//       this.employees = data;
-//       console.log("usercreated", data);
-//     })
-//   }
-//   deleteEmployee(id: number) {
-//     this.empservice.deleteUser(id).subscribe(
-//       data => {
-//         console.log(data);
-//         this.getAllEmployes();
-//       }
-//     )
-//   }
-//   showEdit(id: number) {
-//     this.router.navigate(['edit/' + id]);
-//   }
-
-
-// }

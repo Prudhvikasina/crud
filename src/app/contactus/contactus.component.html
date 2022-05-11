@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+h1{
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>Contact Form</h1>
+
+<div class="container">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-12">
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="FirstName" placeholder="Your name.."  formControlName="FirstName" class="form-control"   ngClass="{ 'is-invalid': submitted && f['FirstName'].errors }">
+    <div *ngIf="submitted && f['FirstName'].errors" class="invalid-feedback">
+      <div *ngIf="f['FirstName'].errors['required']">firstname is required</div>
+    </div>
+</div>
+<div class="form-group">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname"  name="lname" placeholder="Your name.."  formControlName="lname" class="form-control"  ngClass="{ 'is-invalid': submitted && f['lname'].errors }" placeholder="Your last name..">
+    <div *ngIf="submitted && f['lname'].errors" class="invalid-feedback">
+      <div *ngIf="f['lname'].errors['required']">lname is required</div>
+    </div>
+    </div>
+    <div class="form-group">
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+   </div>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>
