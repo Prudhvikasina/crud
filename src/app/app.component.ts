@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CustomerDetails } from './employee';
+import {EmployeeService} from './employee.service'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +8,14 @@ import { CustomerDetails } from './employee';
 })
 export class AppComponent {
   title = 'ANGULAR CRUD';
+  
+  constructor(private employee:EmployeeService){
+
+    this.employee.getData().subscribe(data=>{
+     console.warn(data)
+    })
+  }
+
   details: CustomerDetails = new CustomerDetails;
   ngOnInit()
   {

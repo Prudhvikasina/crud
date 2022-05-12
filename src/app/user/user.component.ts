@@ -14,6 +14,7 @@ export class UserComponent implements OnInit, OnChanges, DoCheck, AfterContentIn
   userStatus: string ='offline';
 
   constructor() { 
+
     console.log('constructor called');
   }
   ngOnDestroy(): void {

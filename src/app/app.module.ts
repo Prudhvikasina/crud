@@ -41,9 +41,6 @@ import { UsersComponent } from './users/users.component';
     LoginComponent,
     UserComponent,
     UsersComponent,
-
-  
-    // EditEmployeeComponent
   ],
   imports: [
     BrowserModule,
@@ -56,8 +53,9 @@ import { UsersComponent } from './users/users.component';
     CalendarModule,
     SliderModule,
     BrowserAnimationsModule,
-    //  Angular Form Modules
     FormsModule,
+    HttpClientModule
+
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

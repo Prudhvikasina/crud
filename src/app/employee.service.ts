@@ -1,6 +1,7 @@
 
 import { Injectable } from '@angular/core';
 import { Employee } from './employee';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,13 @@ export class EmployeeService {
         mobile: '9999933333',
         edept: 'Sales'
     }];
-    constructor() {}
+    constructor(private http:HttpClient) {}
+
+    getData()
+    {
+        let url="https://crudcrud.com/api/d156201959cf439a90a011f76304f1d4";
+        return this.http.get(url);
+    }
     getAllEmployees() {
         return this.EmployeeList
     }
