@@ -1,4 +1,6 @@
+import { Environment } from '@angular/compiler-cli/src/ngtsc/typecheck/src/environment';
 import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { CustomerDetails } from './employee';
 import {EmployeeService} from './employee.service'
 @Component({
@@ -8,6 +10,7 @@ import {EmployeeService} from './employee.service'
 })
 export class AppComponent {
   title = 'ANGULAR CRUD';
+
   
   constructor(private employee:EmployeeService){
 
