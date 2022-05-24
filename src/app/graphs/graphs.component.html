@@ -163,6 +163,50 @@
       </plotly-plot>
       </div>
     </div>
+      
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/polar-chart">Polar Chart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/bar-chart">Bar Chart</a>
+        </li>
+      </ul>
+      </div>
+
+    <div>
+      <div class="row">
+      <div  class="col-md-8" style="display: block">
+        
+        <canvas baseChart
+                [datasets]="polarChartData"
+                [labels]="polarChartLabels"
+                [options]="polarChartOptions"
+                [legend]="polarChartLegend"
+                [type]="'polarArea'"
+                >
+        </canvas>
+      </div>
+      <div class="col-md-8" style="display: block">
+        <canvas baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                [type]="'bar'">
+        </canvas>
+      </div>
+    </div>
+    
+
+
+
+
+
 
 </div>
     </div>
+
+    
+    

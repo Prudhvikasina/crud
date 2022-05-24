@@ -1,0 +1,18 @@
+
+
+
+<div class="container p-5">
+    <div class="row">
+        <div class="col-md-12">
+            <input type="text" class="form-control" [(ngModel)]="filteredString" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div *ngFor="let user of Users | filter:filteredString" class="my-3">
+                <div>Name: {{user.Name  }}</div>
+                <div>Joined Date: {{user.joinedDate | date: 'fullDate' | uppercase}}</div>
+            </div>
+        </div>
+    </div>
+</div>

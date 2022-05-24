@@ -31,6 +31,17 @@ import { YoutubeComponent } from './youtube/youtube.component';
 import { ImagesComponent } from './images/images.component';
 import { GraphsComponent } from './graphs/graphs.component';
 import { OAuthModule } from 'angular-oauth2-oidc';
+import { AgGridComponent } from './ag-grid/ag-grid.component';
+import { AgGridModule } from 'ag-grid-angular';
+import 'ag-grid-enterprise';
+import { NgChartsModule } from 'ng2-charts';
+import { SortComponent } from './sort/sort.component';
+import { Ng2SearchPipeModule} from 'ng2-search-filter';
+import { Ng2OrderModule} from 'ng2-order-pipe';
+import { NgxPaginationModule} from 'ngx-pagination';
+import { FilterPipeModule } from 'ngx-filter-pipe';
+import { FilterpipesComponent } from './filterpipes/filterpipes.component';
+import { FilterPipe } from './Pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -46,6 +57,11 @@ import { OAuthModule } from 'angular-oauth2-oidc';
     YoutubeComponent,
     ImagesComponent,
     GraphsComponent,
+    AgGridComponent,
+    SortComponent,
+    FilterpipesComponent,
+    FilterPipe,
+  
     
   ],
   imports: [
@@ -56,13 +72,21 @@ import { OAuthModule } from 'angular-oauth2-oidc';
     ReactiveFormsModule,
     ButtonModule,
     TableModule,
+    NgChartsModule,
+    Ng2SearchPipeModule,
+    Ng2OrderModule,
+    NgxPaginationModule,
     CalendarModule,
     SliderModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
     PlotlyModule,
-    OAuthModule.forRoot()
+    OAuthModule.forRoot(),
+    AgGridModule,
+    FilterPipeModule
+
+    
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

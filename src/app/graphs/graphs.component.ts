@@ -1,18 +1,58 @@
 import { Component, OnInit } from '@angular/core';
 import * as Plotly from 'plotly.js';
 
+import { ChartType } from 'chart.js';
+
+
 @Component({
   selector: 'app-graphs',
   templateUrl: './graphs.component.html',
   styleUrls: ['./graphs.component.sass']
 })
-export class GraphsComponent implements OnInit {
+export class  GraphsComponent implements OnInit {
   trace9: any;
   traace: any;
     ngOnInit(): void {
-      throw new Error('Method not implemented.');
     }
   // constructor() { }
+  public polarChartOptions = {
+    
+  };
+  public polarChartLabels = [
+    'Red',
+    'Green',
+    'Yellow',
+    'Grey',
+    'Blue'
+  ];
+  public polarChartType = 'polarArea';
+  public polarChartLegend = true;
+  public polarChartData = [
+    {data: [11, 16, 17, 3, 14], label: 'Polar Chart'}
+  ];
+  public polarChartBackgrounds =  [
+    'rgb(255, 99, 132)',
+    'rgb(75, 192, 192)',
+    'rgb(255, 205, 86)',
+    'rgb(201, 203, 207)',
+    'rgb(54, 162, 235)'
+  ];
+
+
+
+  public barChartOptions = {
+    scaleShowVerticalLines: false,
+    responsive: true
+  };
+  public barChartLabels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+  public barChartType = 'bar';
+  public barChartLegend = true;
+  public barChartData = [
+    {data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A'},
+    {data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B'}
+  ];
+
+
     title = 'dynamic-plots';
 graph1 = {
   data: [
@@ -385,7 +425,32 @@ config : {responsive: true}
 }
 }
 
-  
+const config = {
+  type: 'polarArea',
+  options: {}
+};
+
+const data = {
+  labels: [
+    'Red',
+    'Green',
+    'Yellow',
+    'Grey',
+    'Blue'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [11, 16, 7, 3, 14],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(75, 192, 192)',
+      'rgb(255, 205, 86)',
+      'rgb(201, 203, 207)',
+      'rgb(54, 162, 235)'
+    ]
+  }]
+};
+
 
 
   
