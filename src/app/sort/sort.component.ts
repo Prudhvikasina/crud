@@ -34,7 +34,7 @@ export class  SortComponent  implements OnInit {
   key:String = 'id';
   reverse!: boolean; Boolean = false;
 
-  sort(_key: any) {
+  sort(_key: string) {
     this.key = this.key;
     this.reverse = !this.reverse;
   }

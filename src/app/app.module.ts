@@ -42,6 +42,8 @@ import { NgxPaginationModule} from 'ngx-pagination';
 import { FilterPipeModule } from 'ngx-filter-pipe';
 import { FilterpipesComponent } from './filterpipes/filterpipes.component';
 import { FilterPipe } from './Pipes/filter.pipe';
+import { CellComponent } from './cell/cell.component';
+
 
 @NgModule({
   declarations: [
@@ -61,6 +63,7 @@ import { FilterPipe } from './Pipes/filter.pipe';
     SortComponent,
     FilterpipesComponent,
     FilterPipe,
+    CellComponent,
   
     
   ],
@@ -83,7 +86,7 @@ import { FilterPipe } from './Pipes/filter.pipe';
     HttpClientModule,
     PlotlyModule,
     OAuthModule.forRoot(),
-    AgGridModule,
+    AgGridModule.withComponents([]),
     FilterPipeModule
 
     

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FilterComponent } from 'ag-grid-community/dist/lib/components/framework/componentTypes';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { AgGridComponent } from './ag-grid/ag-grid.component';
+import { CellComponent } from './cell/cell.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
@@ -33,7 +34,8 @@ const routes: Routes = [
   {path: 'graphs', component:GraphsComponent},
   {path: 'ag-grid', component:AgGridComponent},
   {path: 'sort', component:SortComponent},
-  {path: 'filterpipes', component:FilterpipesComponent}
+  {path: 'filterpipes', component:FilterpipesComponent},
+  {path: 'cell', component:CellComponent},
 
 ];
 
