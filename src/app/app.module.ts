@@ -43,7 +43,9 @@ import { FilterPipeModule } from 'ngx-filter-pipe';
 import { FilterpipesComponent } from './filterpipes/filterpipes.component';
 import { FilterPipe } from './Pipes/filter.pipe';
 import { CellComponent } from './cell/cell.component';
-
+import { CustomizedCellComponent } from './customized-cell/customized-cell.component';
+import { ScrollComponent } from './scroll/scroll.component';
+import { InfiniteScrollModule } from "ngx-infinite-scroll";
 
 @NgModule({
   declarations: [
@@ -64,6 +66,8 @@ import { CellComponent } from './cell/cell.component';
     FilterpipesComponent,
     FilterPipe,
     CellComponent,
+    CustomizedCellComponent,
+    ScrollComponent,
   
     
   ],
@@ -87,7 +91,11 @@ import { CellComponent } from './cell/cell.component';
     PlotlyModule,
     OAuthModule.forRoot(),
     AgGridModule.withComponents([]),
-    FilterPipeModule
+  
+    FilterPipeModule,
+    InfiniteScrollModule,
+  
+    
 
     
   ],

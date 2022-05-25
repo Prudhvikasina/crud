@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { ImagesComponent } from './images/images.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ScrollComponent } from './scroll/scroll.component';
 import { SortComponent } from './sort/sort.component';
 import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
@@ -36,6 +37,7 @@ const routes: Routes = [
   {path: 'sort', component:SortComponent},
   {path: 'filterpipes', component:FilterpipesComponent},
   {path: 'cell', component:CellComponent},
+  {path: 'scroll', component:ScrollComponent}
 
 ];
 

@@ -19,16 +19,13 @@ export class FilterpipesComponent implements OnInit {
     joinedDate:new Date(15, 2, 2016)
   },
   {
-    Name: 'Naidu',
-    joinedDate:new Date(18, 12, 2022)
+    Name: 'Prudhvi',
+    joinedDate:new Date(25, 12, 2000)
   },
   {
-    Name: 'Charan',
-    joinedDate:new Date(12, 8, 2000)
+    Name: 'Prudhvi',
+    joinedDate:new Date(11, 6, 1999)
   },
   ];
 
-
 }
-
-
