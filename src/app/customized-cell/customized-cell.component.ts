@@ -8,7 +8,7 @@ import { ICellRendererParams } from 'ag-grid-community';
   styleUrls: ['./customized-cell.component.sass']
 })
 export class CustomizedCellComponent implements OnInit, ICellRendererAngularComp {
-  private cellvalue:any;
+  cellvalue:any;
   constructor() { }
 
   agInit(params:any) {
@@ -16,7 +16,7 @@ export class CustomizedCellComponent implements OnInit, ICellRendererAngularComp
     this.cellvalue = "Above 20";
   }
   else{
-    this.cellvalue = "Below 21";
+    this.cellvalue = "Below 20";
   }
 }
   ngOnInit(){

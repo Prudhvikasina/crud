@@ -8,11 +8,11 @@ import { CustomizedCellComponent } from '../customized-cell/customized-cell.comp
   styleUrls: ['./cell.component.sass']
 })
 export class CellComponent implements OnInit {
-   private colDefs:any;
-   private gridApi:any;
-   private gridColumnApi:any;
-   private searchValue:any;
-   private frameworkComponents:any;
+    colDefs:any;
+   gridApi:any;
+    gridColumnApi:any;
+    searchValue:any;
+   frameworkComponents:any;
 
   constructor(private http:HttpClient) { }
 
@@ -74,7 +74,7 @@ export class CellComponent implements OnInit {
 
     })
     this.frameworkComponents({
-      
+
     })
   }
 }

@@ -1,0 +1,28 @@
+<div class="container text-center">
+    <h1>
+        {{title}}!
+    </h1>
+</div>
+<div class="conatiner text-center">
+    <button (click)="onBtExport()" class="btn btn-secondary"> Export to
+        Excel</button>
+
+    <button (click)="onBtnExport1()" class="btn btn-danger">Download CSV export file</button>
+</div>
+
+<div class="container">
+    <label for="">Filter :</label>
+    <input type="text" id="filter-text-box"  class="ms-2" placeholder="Filter..." (input)="onFilterTextBoxChanged()" />
+</div>
+
+
+<div class="container">
+    <ag-grid-angular style="width: 1000px; height: 100vh;" class="ag-theme-alpine" [columnDefs]="columnDefs"
+        [defaultColDef]="defaultColDef" [rowData]="rowData" (gridReady)="onGridReady($event)" 
+        [paginationPageSize]="paginationPageSize"
+        [suppressAggFuncInHeader]="true"
+    
+        [autoGroupColumnDef]="autoGroupColumnDef"
+        ></ag-grid-angular>
+
+</div>

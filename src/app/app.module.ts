@@ -31,7 +31,6 @@ import { YoutubeComponent } from './youtube/youtube.component';
 import { ImagesComponent } from './images/images.component';
 import { GraphsComponent } from './graphs/graphs.component';
 import { OAuthModule } from 'angular-oauth2-oidc';
-import { AgGridComponent } from './ag-grid/ag-grid.component';
 import { AgGridModule } from 'ag-grid-angular';
 import 'ag-grid-enterprise';
 import { NgChartsModule } from 'ng2-charts';
@@ -46,6 +45,9 @@ import { CellComponent } from './cell/cell.component';
 import { CustomizedCellComponent } from './customized-cell/customized-cell.component';
 import { ScrollComponent } from './scroll/scroll.component';
 import { InfiniteScrollModule } from "ngx-infinite-scroll";
+import { InlineComponent } from './inline/inline.component';
+import { AgngularGridComponent } from './agngular-grid/agngular-grid.component';
+
 
 @NgModule({
   declarations: [
@@ -61,13 +63,15 @@ import { InfiniteScrollModule } from "ngx-infinite-scroll";
     YoutubeComponent,
     ImagesComponent,
     GraphsComponent,
-    AgGridComponent,
+
     SortComponent,
     FilterpipesComponent,
     FilterPipe,
     CellComponent,
     CustomizedCellComponent,
     ScrollComponent,
+    InlineComponent,
+    AgngularGridComponent,
   
     
   ],
@@ -94,6 +98,7 @@ import { InfiniteScrollModule } from "ngx-infinite-scroll";
   
     FilterPipeModule,
     InfiniteScrollModule,
+    
   
     
 
