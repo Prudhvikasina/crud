@@ -1,0 +1,10 @@
+<header>
+    <h1>ngx-image-compress demo</h1>
+</header>
+
+<section>
+    <button class="btn btn-info text-white" (click)="compressFile()">Upload and Compress Images</button>
+
+    <img *ngIf="imgResultBeforeCompress" [src]="imgResultBeforeCompress">
+    <img *ngIf="imgResultAfterCompress" [src]="imgResultAfterCompress">
+</section>

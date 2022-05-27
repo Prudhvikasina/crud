@@ -9,18 +9,13 @@
      <button class="btn btn-danger" (click)="OnDeleteComponet()">Delete Components</button>
      <app-user *ngFor="let user of userlist" [user]="user" [name]="name">
          <p>Username:{{ user}}</p>
-         
-
+        
          <h6>Angular property binding & Event binding</h6>
         <button class="btn btn-primary" [disabled]="!allowNewuser" (click)="changeUserCreatedStatus()"> Add user</button>
         <div>{{userCreatedStatus}}</div>
-
          </app-user></div>
 <br>
 <br>
-
-
-
 <div class="form-group">
     <h6>One way Data binding</h6>
     <label for="gender">Gender</label>
