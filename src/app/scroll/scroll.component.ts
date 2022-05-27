@@ -22,7 +22,7 @@ export class ScrollComponent implements OnInit {
     setTimeout(() =>{
       const p : any = ' '.repeat(100).split('').map((s,i) => i + 1 + length);
       while(p.length) this.Prudhvi.push(p.shift());
-    },100);
+    },1000);
   }
 
 }

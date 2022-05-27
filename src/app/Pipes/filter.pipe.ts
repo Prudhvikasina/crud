@@ -10,8 +10,6 @@ export class FilterPipe implements PipeTransform {
     if (value.length === 0 || filterString == '') {
       return value;
     }
-  
-
     const users = [];
     for (const users of value) {
       if (users['name'] === filterString){

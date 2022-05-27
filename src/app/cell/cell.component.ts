@@ -66,7 +66,7 @@ export class CellComponent implements OnInit {
     this.gridApi=params.api;
     this.gridColumnApi= params.columnApi;
     this.http
-    .get(" http://localhost:3000/Users")
+    .get("https://www.ag-grid.com/example-assets/olympic-winners.json")
     .subscribe(data=>{
       params.api.setRowData(data)
     })

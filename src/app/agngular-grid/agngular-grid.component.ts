@@ -13,7 +13,7 @@ import 'ag-grid-enterprise';
   styleUrls: ['./agngular-grid.component.sass']
 })
 export class AgngularGridComponent implements OnInit {
-  title = "AG-Grid";
+  title = "ANGULAR-GRID";
   
   private gridApi!: GridApi;
  
@@ -48,6 +48,8 @@ export class AgngularGridComponent implements OnInit {
 
   // Data that gets displayed in the grid
   public rowData!: any[];
+  public rowSelection = 'multiple';
+  //public rowSelection = 'single';
   public serverSideStoreType: ServerSideStoreType = 'partial';
   public paginationPageSize = 10;
   public cacheBlockSize = 10;
@@ -67,6 +69,49 @@ onFilterTextBoxChanged() {
   this.gridApi.setQuickFilter(
     (document.getElementById('filter-text-box') as HTMLInputElement).value
   );
+}
+onSelectionChanged() {
+
+  var selectedRows = this.gridApi.getSelectedRows();
+
+  var selectedRowsString = '';
+
+  var maxToShow = 5;
+
+  selectedRows.forEach(function (selectedRow, index) {
+
+    if (index >= maxToShow) {
+
+      return;
+
+    }
+
+    if (index > 0) {
+
+      selectedRowsString += ', ';
+
+    }
+
+    selectedRowsString += selectedRow.athlete;
+
+  });
+
+  if (selectedRows.length > maxToShow) {
+
+    var othersCount = selectedRows.length - maxToShow;
+
+    selectedRowsString +=
+
+      ' and ' + othersCount + ' other' + (othersCount !== 1 ? 's' : '');
+
+  }
+
+  (document.querySelector(
+
+    '#selectedRows'
+
+  ) as any).innerHTML = selectedRowsString;
+
 }
 
 

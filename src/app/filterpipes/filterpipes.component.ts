@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filterpipes.component.sass']
 })
 export class FilterpipesComponent implements OnInit {
-
+  shorten:any;
   filteredString: string ='';
 
   constructor() { }

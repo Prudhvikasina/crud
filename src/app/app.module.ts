@@ -72,6 +72,7 @@ import { AgngularGridComponent } from './agngular-grid/agngular-grid.component';
     ScrollComponent,
     InlineComponent,
     AgngularGridComponent,
+    
   
     
   ],

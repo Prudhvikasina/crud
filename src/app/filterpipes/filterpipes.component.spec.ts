@@ -23,3 +23,6 @@ describe('FilterpipesComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+
+

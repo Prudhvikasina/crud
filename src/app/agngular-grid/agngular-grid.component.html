@@ -12,11 +12,29 @@
 
 <div class="container">
     <label for="">Filter :</label>
-    <input type="text" id="filter-text-box"  class="ms-2" placeholder="Filter..." (input)="onFilterTextBoxChanged()" />
+    <input type="text" id="filter-text-box" class="ms-2" placeholder="Filter..." (input)="onFilterTextBoxChanged()" />
 </div>
 
+<div class="container text-center" style="font-size:larger;background-color:pink">
 
+    Selection:
+
+    <span id="selectedRows"></span>
+
+</div>
 <div class="container">
+
+    <ag-grid-angular style="width: 1000px; height: 100vh;" class="ag-theme-alpine" [columnDefs]="columnDefs"
+        [defaultColDef]="defaultColDef" [paginationPageSize]="paginationPageSize" [suppressAggFuncInHeader]="true"
+        [rowSelection]="rowSelection" [autoGroupColumnDef]="autoGroupColumnDef" [rowData]="rowData"
+        (selectionChanged)="onSelectionChanged()" (gridReady)="onGridReady($event)"></ag-grid-angular>
+
+    <!-- if we want the multi selection with one click  -->
+
+    <!-- [rowMultiSelectWithClick]="true" -->
+
+</div>
+<!-- <div class="container">
     <ag-grid-angular style="width: 1000px; height: 100vh;" class="ag-theme-alpine" [columnDefs]="columnDefs"
         [defaultColDef]="defaultColDef" [rowData]="rowData" (gridReady)="onGridReady($event)" 
         [paginationPageSize]="paginationPageSize"
@@ -25,4 +43,4 @@
         [autoGroupColumnDef]="autoGroupColumnDef"
         ></ag-grid-angular>
 
-</div>
+</div> -->
