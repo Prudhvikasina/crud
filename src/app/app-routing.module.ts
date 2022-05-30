@@ -13,9 +13,11 @@ import { HomeComponent } from './home/home.component';
 import { ImagesComponent } from './images/images.component';
 import { InlineComponent } from './inline/inline.component';
 import { LoginComponent } from './login/login.component';
+import { MedalCellRendererComponent } from './medal-cell-renderer/medal-cell-renderer.component';
 import { RegisterComponent } from './register/register.component';
 import { ScrollComponent } from './scroll/scroll.component';
 import { SortComponent } from './sort/sort.component';
+import { TotalValueRendererComponent } from './total-value-renderer/total-value-renderer.component';
 import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
 import { YoutubeComponent } from './youtube/youtube.component';
@@ -39,8 +41,9 @@ const routes: Routes = [
   {path: 'cell', component:CellComponent},
   {path: 'scroll', component:ScrollComponent},
   {path: 'inline', component:InlineComponent},
-  {path: 'agngular-grid', component:AgngularGridComponent}
-
+  {path: 'agngular-grid', component:AgngularGridComponent},
+  {path: 'medal-cell-renderer', component:MedalCellRendererComponent},
+  {path: 'total-value-renderer', component:TotalValueRendererComponent}
 ];
 
 @NgModule({

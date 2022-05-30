@@ -133,6 +133,4 @@ onGridReady(params: GridReadyEvent) {
       )
     });
 }
-
-
 }

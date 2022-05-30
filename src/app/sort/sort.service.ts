@@ -8,7 +8,7 @@ import { Users } from "../users";
     providedIn: 'root'
 })
 export class sortService {
-    
+
     url ="http://localhost:3000/Users";
 
     constructor(private http:HttpClient){

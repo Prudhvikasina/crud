@@ -47,7 +47,8 @@ import { ScrollComponent } from './scroll/scroll.component';
 import { InfiniteScrollModule } from "ngx-infinite-scroll";
 import { InlineComponent } from './inline/inline.component';
 import { AgngularGridComponent } from './agngular-grid/agngular-grid.component';
-
+import { MedalCellRendererComponent } from './medal-cell-renderer/medal-cell-renderer.component';
+import { TotalValueRendererComponent } from './total-value-renderer/total-value-renderer.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +73,8 @@ import { AgngularGridComponent } from './agngular-grid/agngular-grid.component';
     ScrollComponent,
     InlineComponent,
     AgngularGridComponent,
+    MedalCellRendererComponent,
+    TotalValueRendererComponent,
     
   
     
@@ -95,15 +98,9 @@ import { AgngularGridComponent } from './agngular-grid/agngular-grid.component';
     HttpClientModule,
     PlotlyModule,
     OAuthModule.forRoot(),
-    AgGridModule.withComponents([]),
-  
+    AgGridModule.withComponents([AppComponent,MedalCellRendererComponent,TotalValueRendererComponent]),
     FilterPipeModule,
     InfiniteScrollModule,
-    
-  
-    
-
-    
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]
