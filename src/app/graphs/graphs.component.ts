@@ -28,7 +28,7 @@ export class  GraphsComponent implements OnInit {
   public polarChartType = 'polarArea';
   public polarChartLegend = true;
   public polarChartData = [
-    {data: [11, 16, 17, 3, 14], label: 'Polar Chart'}
+    {data: [11,15, 17, 13, 14], label: 'Polar Chart'}
   ];
   public polarChartBackgrounds =  [
     'rgb(255, 99, 132)',

@@ -24,7 +24,7 @@ export class CreateEmployeeComponent implements OnInit {
       edept:['', Validators.required],
       id:[0,[Validators.required]],
       gender: ['', [Validators.required]],
-      dob:[null,[Validators.required]],
+      // dob:[null,[Validators.required]],
       mobile: ['',  Validators.compose([Validators.required, Validators.pattern("[[6-9]\\d{9}")])],
       mail: ['', [Validators.required, Validators.email, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
 

@@ -25,10 +25,10 @@
               
               <td>{{employee.gender}}</td>
               <td>
-                  <a pButton pRipple type="button"  [routerLink]="['/update-employee', employee.id]" icon="pi pi-user-edit"
-                      class="btn btn-primary">Edit</a> 
-                  <a pButton pRipple type="button" (click)="remove(employee.id)"
-                      icon="pi pi-trash" class="btn btn-danger text-white">Delete</a>
+                  <a Button pRipple type="button"  [routerLink]="['/update-employee', employee.id]" icon="pi pi-user-edit"
+                      class="btn btn-primary" id="edit-btn">Edit</a> 
+                  <a Button pRipple type="button" (click)="remove(employee.id)"
+                      icon="pi pi-trash" class="ms-3 btn btn-danger text-white">Delete</a>
               </td>
           </tr>
       </ng-template>

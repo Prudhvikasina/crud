@@ -4,7 +4,7 @@
         <div class="row box shadow">
     <form [formGroup]="userValue" autocomplete="off">
         <div class="mb-1">
-            <label for="ename" class="form-label">Employee Name</label>
+            <label for="ename"  id="employee" class="form-label">Employee Name</label>
             <div class="input-group has-validation">
                 <input type="text" #name [ngClass]="{'form-control': true, 
                 'is-invalid': userValue.get('ename')?.invalid &&
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="mb-1">
-            <label for="edept" class="form-label">Employee Dept</label>
+            <label for="edept" id="employeedept"  class="form-label">Employee Dept</label>
             <div class="input-group has-validation">
                 <input type="text" #name [ngClass]="{'form-control': true, 
                 'is-invalid': userValue.get('edept')?.invalid &&
@@ -29,9 +29,8 @@
                 </div>
             </div>
         </div>
-
         <div class="mb-1">
-            <label for="mobile" class="form-label">Mobile</label>
+            <label for="mobile" id="mobile" class="form-label">Mobile</label>
             <div class="input-group has-validation">
                 <input type="number" maxlength="10" [ngClass]="{'form-control': true, 'is-invalid': userValue.get('mobile')?.invalid &&
                 (userValue.get('mobile')?.dirty || userValue.get('mobile'))}" id="mobile" name="mobile"
@@ -43,7 +42,7 @@
         </div>
 
         <div class="mb-1">
-            <label for="mail" class="form-label">Email</label>
+            <label for="mail" id="email"  class="form-label">Email</label>
             <div class="input-group has-validation">
                 <input type="mail" 
                 [ngClass]="{'form-control': true, 
@@ -56,20 +55,20 @@
                 </div>
             </div>
         </div>
-        <div class="mb-1">
-            <label for="DOB" class="form-label">DOB</label>
+        <!-- <div class="mb-1">
+            <label for="DOB"  id="dob" class="form-label" >DOB</label>
             <p-calendar [showIcon]="true" inputId="icon" formControlName="dob" [ngClass]="{'form-control': true, 'is-invalid': userValue.get('dob')?.invalid &&
             (userValue.get('dob')?.dirty || userValue.get('dob'))}"></p-calendar>
-        </div>
+        </div> -->
         <div class="mb-1">
-            <label for="gender" class="form-label">Gender {{userValue.get('gender')?.value}} </label>
+            <label for="gender" id="gender"  class="form-label">Gender {{userValue.get('gender')?.value}} </label>
             <div class="input-group has-validation">
                 <select [ngClass]="{'form-select': true, 'is-invalid': userValue.get('gender')?.invalid &&
                     (userValue.get('gender')?.dirty || userValue.get('gender'))}"
                     aria-label="Default select example" formControlName="gender">
                     <option value=""> --Select--</option>
-                    <option value="Male" selected="userValue.get('gender')?.value=='Male'">Male</option>
-                    <option value="Female" selected="userValue.get('gender')?.value=='Female'">Female</option>
+                    <option value="male" >Male</option>
+                    <option value="female" >Female</option>
                 </select>
                 <div class="invalid-feedback">
                     This Gender is required.
@@ -98,7 +97,7 @@
           </div>
         <div class="mb-1 p-4">
             <div class="btn-group" role="group" aria-label="Button">
-                <button (click)="save()" [disabled]="userValue.invalid" class="btn btn-primary" type="button">
+                <button  (click)="save()" [disabled]="userValue.invalid" class=" btn btn-primary" type="button" id="save-btn">
                     {{id==0 || id==null ?'Save':'Update'}}</button>
                 <button class="btn btn-secondary" type="button">Reset </button>
             </div>
