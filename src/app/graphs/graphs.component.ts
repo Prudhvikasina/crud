@@ -229,7 +229,7 @@ layout :[{ width: 600, height: 450, xaxis: { range: [0, 62]}}]
 
 private trace1 = {
 x:['2020-10-04', '2021-11-04', '2023-12-04'],
-y: [90, 40, 60],
+y: [10,50,100],
 type: 'scatter'
 };
 

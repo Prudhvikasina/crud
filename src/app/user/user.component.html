@@ -32,5 +32,56 @@
     <ng-content></ng-content>
 </div>
 
-<!-- <div>{{"user"}} with ID {{userID}} is {{ getUserStatus()}}</div> -->
+<div>{{"user"}} with ID {{userID}} is {{ getUserStatus()}}</div>
 
+
+ 
+<input type="text" [(ngModel)]="message">
+
+<p>{{message}}</p>
+
+
+<input type="text" [readonly]="disabledValue">
+<br><br>
+<button [disabled]="disabledValue">Click me </button>
+
+
+
+
+<div class="container">
+
+  <div class="row mt-5">
+  
+  <div class="col-md-6 mt-5" *ngFor="let item of rows">
+  
+  <h2>{{item.title}}</h2>
+  
+  <div class="card">
+  
+  <div class="card-header">{{item.buttonText}}</div>
+  
+  <div class="card-body">{{item.description}}</div>
+  <div>{{item.matter}}</div>
+  
+  <div class="card-footer">{{item.footer}}</div>
+  
+  </div>
+  
+  </div>
+  
+  </div>
+  
+  </div>
+
+<!-- 
+  <div class="card" *ngFor="let data of tweets; let i = index">
+    <div>
+      <img [src]="data.img" alr="twitter logo">
+      <h2>{{data.title}}{{i+1}}</h2>
+    </div>
+    <p>{{data.para}}</p>
+    <div class="button-group">
+      <button class="cancel">Cancel</button>
+      <button class="submit">Submit</button>
+    </div>
+  </div> -->

@@ -12,11 +12,69 @@ export class UserComponent implements OnInit, OnChanges, DoCheck, AfterContentIn
   name!: string;
   userID: number =10;
   userStatus: string ='offline';
+  message :string = "";
+
+  status = "Completed";
+  disabledValue = true;
 
   constructor() { 
 
     console.log('constructor called');
   }
+
+
+  rows = [
+
+    {
+    
+    title: 'Google',
+    
+    description: 'Some quick example text to build on the card title and make up the bulk of the card content',
+    
+    buttonText: 'Google',
+    matter :'prudhvi',
+    footer:'Welcome to Google '
+    
+    },
+    
+    {
+    
+    title: 'Apple',
+    
+    description: 'Some quick example text to build on the card title and make up the bulk of the card content',
+    
+    buttonText: 'Apple',
+    
+    footer:'Welcome to Apple '
+    
+    },
+    
+    {
+    
+    title: 'Microsoft',
+    
+    description: 'Some quick example text to build on the card title and make up the bulk of the card content',
+    
+    buttonText: 'Microsoft',
+    
+    footer:'Welcome to Microsoft'
+    
+    },
+    
+    {
+    
+    title: 'PeopleTech',
+    
+    description: 'Some quick example text to build on the card title and make up the bulk of the card content',
+    
+    buttonText: 'PeopleTech',
+    
+    footer:'Welcome to PeopleTech'
+    
+    },
+    
+    
+    ];
   ngOnDestroy(): void {
   console.log('OnDestroy');
   }
@@ -38,6 +96,11 @@ export class UserComponent implements OnInit, OnChanges, DoCheck, AfterContentIn
   }
   ngOnInit(): void {
    console.log('ngOninit called');
+   if(this.status = "Completed"){
+    this.disabledValue = true;
+   }else{
+    this.disabledValue = false;
+   }
   }
   onclick(){
     return this.name;
@@ -70,6 +133,10 @@ ngOndestroy() {
 
 getUserStatus(){
   return this.getUserStatus;
+}
+
+onSubmit(){
+  
 }
 }
 

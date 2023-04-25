@@ -12,6 +12,8 @@ import { GraphsComponent } from './graphs/graphs.component';
 import { HomeComponent } from './home/home.component';
 import { ImagesComponent } from './images/images.component';
 import { InlineComponent } from './inline/inline.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+
 import { LoginComponent } from './login/login.component';
 import { MedalCellRendererComponent } from './medal-cell-renderer/medal-cell-renderer.component';
 import { RegisterComponent } from './register/register.component';
@@ -43,7 +45,8 @@ const routes: Routes = [
   {path: 'inline', component:InlineComponent},
   {path: 'agngular-grid', component:AgngularGridComponent},
   {path: 'medal-cell-renderer', component:MedalCellRendererComponent},
-  {path: 'total-value-renderer', component:TotalValueRendererComponent}
+  {path: 'total-value-renderer', component:TotalValueRendererComponent},
+  {path: 'landing-page', component:LandingPageComponent},
 ];
 
 @NgModule({

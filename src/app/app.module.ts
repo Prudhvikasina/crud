@@ -49,6 +49,7 @@ import { InlineComponent } from './inline/inline.component';
 import { AgngularGridComponent } from './agngular-grid/agngular-grid.component';
 import { MedalCellRendererComponent } from './medal-cell-renderer/medal-cell-renderer.component';
 import { TotalValueRendererComponent } from './total-value-renderer/total-value-renderer.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import { TotalValueRendererComponent } from './total-value-renderer/total-value-
     AgngularGridComponent,
     MedalCellRendererComponent,
     TotalValueRendererComponent,
+    LandingPageComponent,
     
   
     
